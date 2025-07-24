@@ -18,20 +18,27 @@ This is a solution to the [Blog preview card challenge on Frontend Mentor](https
 
 ## Overview
 
-Going into this challenge, I had much more knowledge than with the previous QR-Code component. I wanted to create something that was a little unique and not follow the guidelines 1:1. What I did was I made a dark-mode version that showcases just a tad bit more of my own personal style. I believe that I learned a lot of valuable lessons compared to the last challenge. Wrapping the content of the page inside `<main>` immediately, using units, such as `.rem`, by default instead of relying on `.px`. Creating classes and addressing `html`-elements in my `CSS` that way, thinking about the potential future of expanding the page, working like a real developer instead of addressing elements with just: `p {...}`. I also learned a lot when it comes to responsive design, centering elements in various ways, using flexbox, or grid when it's use-case was better suited. Using the `gap` CSS-property, instead of `margin`, when having a flexbox/grid layout. Using hover-effects for the first time, along with a nice animation, by utilizing `:hover` along with `transition`. Safe to  say, I learned a lot. I implemented a mobile-first approach, trying to implement responsibility, by also thinking about:"Ok, so when the screen is reaaally narrow, which, no one has a phone that narrow but whatever: The article-container becomes so narrow,  that content gets cut off, because it's correctly set to `overflow:hidden;`. How do I overcome  this? I found about about setting `overflow-y: scroll;`. But that had a really ugly vertical scrollbar that I wanted to eliminate entirely. By googling and reading a post on [stackoverflow](https://stackoverflow.com), I removed the scroll-bar by setting `scrollbar-width: none;`. Also, I had a hard time centering all content on the page utilizing 
+Going into this challenge, I had much more knowledge than with the previous QR-Code component. I wanted to create something that was a little unique and not follow the guidelines 1:1. What I did was I made a dark-mode version that showcases just a tad bit more of my own personal style. I believe that I learned a lot of valuable lessons compared to the last challenge. Wrapping the content of the page inside `<main>` immediately, using units, such as `.rem`, by default instead of relying on `.px`. Creating classes and addressing `html`-elements in my `CSS` that way, thinking about the potential future of expanding the page, working like a real developer instead of addressing elements with just: `p {...}`. I also learned a lot when it comes to responsive design, centering elements in various ways, using flexbox, or grid when it's use-case was better suited. Using the `gap` CSS-property, instead of `margin`, when having a flexbox/grid layout. Using hover-effects for the first time, along with a nice animation, by utilizing `:hover` along with `transition`. Safe to  say, I learned a lot. I implemented a mobile-first approach, trying to implement responsibility, by also thinking about:"Ok, so when the screen is reaaally narrow, which, no one has a phone that narrow but whatever: The article-container becomes so narrow,  that content gets cut off, because it's correctly set to `overflow:hidden;`. How do I overcome  this? I found about about setting `overflow: hidden scroll;`. But that had a really ugly vertical scrollbar that I wanted to eliminate entirely. By googling and reading a post on [stackoverflow](https://stackoverflow.com), I removed the scroll-bar by setting `scrollbar-width: none;`. Also, I had a hard time centering all content on the page utilizing 
 
-```css body {
+```css
+body {
   height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-} ```
-, because the margins I had set would just disappear when scaling to a narrow screen-size, which is why I utilized ```css body {
+}
+```
+, because the margins I had set would just disappear when scaling to a narrow screen-size, which is why I utilized 
+
+```css
+body {
   height: 100vh;
   display: grid;
   place-content: center;
-} ```, instead.
+}
+```
+, instead.
 
 All in all, I think it turned out great and I am proud of myself. I'm looking forward for what's to come! This is just the beginning!
 
