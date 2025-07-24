@@ -110,6 +110,7 @@ body {
 .article_image {
   border-radius: .75rem;
   height: 100%;
+  width: 100%;
   object-fit: cover;
   border: solid var(--black-700) .1rem;
 }
